@@ -14,7 +14,7 @@ var MethodProxy = function(object, queue) {
         method;
     while (methodName.length) {
       // dig into the object as many levels as needed (e.g. `FB.XFBML.parse`)
-      if (method !== undefined) {
+      if (method) {
         object = object[method];
       }
       method = methodName.shift();
