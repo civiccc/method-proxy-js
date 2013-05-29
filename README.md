@@ -3,6 +3,11 @@
 Serves as a proxy between your code and an object. Useful for working with
 asynchronously loaded objects, such as Facebook's API.
 
+Read <cite>[Working With Asynchronously Loaded JavaScript Objects][blog]</cite>
+for more in-depth look at its uses.
+
+[blog]: http://causes.github.io/blog/2013/05/28/working-with-asynchronously-loaded-javascript-objects/
+
 ## Example usage
 
 ```javascript
