@@ -1,0 +1,17 @@
+{
+  "author": {
+    "email": "eng@causes.com",
+    "name": "Causes Engineers",
+    "url": "http://causes.github.io"
+  },
+  "bugs": "https://github.com/causes/method-proxy-js/issues",
+  "description": "Forwards method calls to an object.",
+  "license": "MIT",
+  "main": "method-proxy.js",
+  "name": "method-proxy-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/causes/method-proxy-js.git"
+  },
+  "version": "1.0.0"
+}
