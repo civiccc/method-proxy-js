@@ -8,12 +8,12 @@ describe('MethodProxy', function() {
     };
   });
 
-  context('after initialization', function() {
+  describe('after initialization', function() {
     beforeEach(function() {
       FBMethodProxy = new MethodProxy(FB, []);
     });
 
-    context('when pushed to', function() {
+    describe('when pushed to', function() {
       it('calls the pushed methods with the correct arguments', function() {
         spyOn(FB, 'aMethod');
         FBMethodProxy.push(['aMethod', 'this is a string', 2]);
@@ -36,7 +36,7 @@ describe('MethodProxy', function() {
     });
   });
 
-  context('with an existing queue', function() {
+  describe('with an existing queue', function() {
     var queue = [
       ['aMethod', 'my argument'],
       ['anObject.anotherMethod', 'my other argument', 'one more']

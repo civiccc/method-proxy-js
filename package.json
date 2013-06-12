@@ -6,12 +6,18 @@
   },
   "bugs": "https://github.com/causes/method-proxy-js/issues",
   "description": "Forwards method calls to an object.",
+  "devDependencies": {
+    "phantomjs": "1.9.x"
+  },
   "license": "MIT",
   "main": "method-proxy.js",
   "name": "method-proxy-js",
   "repository": {
     "type": "git",
     "url": "https://github.com/causes/method-proxy-js.git"
+  },
+  "scripts": {
+    "test": "phantomjs node_modules/phantomjs/lib/phantom/examples/run-jasmine.js test/SpecRunner.html"
   },
   "version": "1.0.0"
 }
