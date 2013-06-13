@@ -1,6 +1,7 @@
 # method-proxy-js
 
 [![NPM version](https://badge.fury.io/js/method-proxy-js.png)](http://badge.fury.io/js/method-proxy-js)
+[![Build Status](https://travis-ci.org/causes/method-proxy-js.png)](https://travis-ci.org/causes/method-proxy-js)
 
 Serves as a proxy between your code and an object. Useful for working with
 asynchronously loaded objects, such as Facebook's API.
