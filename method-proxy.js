@@ -2,7 +2,7 @@ var MethodProxy = function(object, queue) {
   this.init = function(object, queue) {
     this.object = object;
 
-    for (var i = 0; i < queue.length; ++i) {
+    for (var i = 0, len = queue.length; i < len; ++i) {
       this.forward(queue[i]);
     }
   };
