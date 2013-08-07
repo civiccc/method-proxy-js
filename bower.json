@@ -1,0 +1,14 @@
+{
+  "name": "method-proxy-js",
+  "version": "1.0.0",
+  "main": "method-proxy.js",
+  "description": "Forwards method calls to an object.",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    ".travis.yml"
+  ]
+}
