@@ -16,7 +16,7 @@ for more in-depth look at its uses.
 ```javascript
 MyFB = window.MyFB || [];
 
-MyFB.push(['ui', { ... }]);
+MyFB.push(['ui', ...]);
 
 window.fbAsyncInit = function() {
   FB.init({
