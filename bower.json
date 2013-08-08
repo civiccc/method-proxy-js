@@ -1,6 +1,6 @@
 {
   "name": "method-proxy-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "method-proxy.js",
   "description": "Forwards method calls to an object.",
   "ignore": [

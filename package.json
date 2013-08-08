@@ -19,5 +19,5 @@
   "scripts": {
     "test": "phantomjs node_modules/phantomjs/lib/phantom/examples/run-jasmine.js test/SpecRunner.html"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
