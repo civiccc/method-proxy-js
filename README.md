@@ -11,6 +11,16 @@ for more in-depth look at its uses.
 
 [blog]: http://causes.github.io/blog/2013/05/28/working-with-asynchronously-loaded-javascript-objects/
 
+## Installing
+
+### Bower
+
+    bower install method-proxy-js
+
+### npm
+
+    npm install method-proxy-js
+
 ## Example usage
 
 ```javascript
