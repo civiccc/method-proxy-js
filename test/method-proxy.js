@@ -4,7 +4,11 @@ describe('MethodProxy', function() {
       aMethod : function() {},
       anObject : {
         anotherMethod : function() {}
-      }
+      },
+      callbackRunner : function(callback) {
+        callback();
+      },
+      thisIsSubEnqueued : function() {}
     };
   });
 
@@ -37,10 +41,14 @@ describe('MethodProxy', function() {
   });
 
   describe('with an existing queue', function() {
-    var queue = [
-      ['aMethod', 'my argument'],
-      ['anObject.anotherMethod', 'my other argument', 'one more']
-    ];
+    var queue;
+
+    beforeEach(function() {
+      queue = [
+        ['aMethod', 'my argument'],
+        ['anObject.anotherMethod', 'my other argument', 'one more']
+      ];
+    });
 
     it('calls the methods in the queue with the arguments in the queue', function() {
       spyOn(FB, 'aMethod');
@@ -50,6 +58,20 @@ describe('MethodProxy', function() {
       expect(FB.aMethod).toHaveBeenCalledWith('my argument');
       expect(FB.anObject.anotherMethod)
         .toHaveBeenCalledWith('my other argument', 'one more');
+    });
+
+    describe('one of the items enqueues another item', function() {
+      it('evalutes the newly enqueued item', function() {
+        queue.push(['callbackRunner', function() {
+          queue.push(['thisIsSubEnqueued', 'an argument']);
+        }]);
+
+        spyOn(FB, 'thisIsSubEnqueued');
+
+        queue = new MethodProxy(FB, queue);
+
+        expect(FB.thisIsSubEnqueued).toHaveBeenCalledWith('an argument');
+      });
     });
   });
 });
