@@ -1,5 +1,7 @@
 var MethodProxy = function(object, queue) {
   this.init = function(object, queue) {
+    var item;
+
     this.object = object;
 
     while(item = queue.shift()) {
