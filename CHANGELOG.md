@@ -1,3 +1,7 @@
+1.0.4
+
+* Fix version numbers
+
 1.0.3
 
 * Fix scoping bug
