@@ -1,4 +1,14 @@
+/* global MethodProxy:false */
+/* global describe:false    */
+/* global it:false          */
+/* global beforeEach:false  */
+/* global spyOn:false       */
+/* global expect:false      */
 describe('MethodProxy', function() {
+  'use strict';
+
+  var FB, FBMethodProxy;
+
   beforeEach(function() {
     FB = {
       aMethod : function() {},
@@ -54,7 +64,7 @@ describe('MethodProxy', function() {
       spyOn(FB, 'aMethod');
       spyOn(FB.anObject, 'anotherMethod');
 
-      new MethodProxy(FB, queue);
+      queue = new MethodProxy(FB, queue);
       expect(FB.aMethod).toHaveBeenCalledWith('my argument');
       expect(FB.anObject.anotherMethod)
         .toHaveBeenCalledWith('my other argument', 'one more');

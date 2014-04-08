@@ -1,4 +1,6 @@
-var MethodProxy = function(object, queue) {
+window.MethodProxy = function(object, queue) {
+  'use strict';
+
   this.init = function(object, queue) {
     var item;
 

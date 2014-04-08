@@ -1,23 +1,23 @@
 /* jshint node: true */
 
 module.exports = function(grunt) {
-  "use strict";
+  'use strict';
 
   grunt.initConfig({
-      pkg: grunt.file.readJSON('package.json'),
-      jshint: {
-        all: [
-            "*.js",
-            "spec/*.js"
-        ],
-        options: {
-          jshintrc: '.jshintrc'
-        }
-      },
-      jasmine: {
-        src: "method-proxy.js",
-        options: {
-          specs: "spec/**/*.js"
+    pkg: grunt.file.readJSON('package.json'),
+    jshint: {
+      all: [
+        '*.js',
+        'spec/*.js'
+      ],
+      options: {
+        jshintrc: '.jshintrc'
+      }
+    },
+    jasmine: {
+      src: 'method-proxy.js',
+      options: {
+        specs: 'spec/**/*.js'
       }
     }
   });
