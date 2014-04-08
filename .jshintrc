@@ -1,16 +1,16 @@
 {
-    "validthis" : true,
-    "multistr"  : true,
-    "laxcomma"  : true,
-    "laxbreak"  : true,
+    "asi"       : true,
+    "boss"      : true,
     "browser"   : true,
-    "eqeqeq"    : false,
-    "eqnull"    : true,
+    "curly"     : false,
     "debug"     : true,
     "devel"     : true,
-    "curly"     : false,
-    "boss"      : true,
+    "eqeqeq"    : false,
+    "eqnull"    : true,
     "expr"      : true,
-    "asi"       : true,
-    "supernew"  : true
+    "laxbreak"  : true,
+    "laxcomma"  : true,
+    "multistr"  : true,
+    "supernew"  : true,
+    "validthis" : true
 }
