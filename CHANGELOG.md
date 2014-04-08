@@ -1,3 +1,7 @@
+Unreleased
+
+* Fix scoping bug
+
 1.0.2
 
 * Fix sub-enqueue bug
