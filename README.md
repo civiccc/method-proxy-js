@@ -1,6 +1,7 @@
 # method-proxy-js
 
 [![NPM version](https://badge.fury.io/js/method-proxy-js.png)](http://badge.fury.io/js/method-proxy-js)
+[![Bower version](https://badge.fury.io/bo/method-proxy-js.svg)](http://badge.fury.io/bo/method-proxy-js)
 [![Build Status](https://travis-ci.org/causes/method-proxy-js.png)](https://travis-ci.org/causes/method-proxy-js)
 
 Serves as a proxy between your code and an object. Useful for working with
